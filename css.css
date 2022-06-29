@@ -1,0 +1,101 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(0, 0%, 100%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Fondo-plan: #F8F9FE;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display';
+    box-sizing: border-box;
+}
+
+body {    
+    background-image: url("./order-summary-component-main/images/pattern-background-mobile.svg");
+    background-repeat: no-repeat ;
+    background-color: var(--Pale-blue);
+    margin-top:80px;
+    display: flex;
+    justify-content: center;
+}
+#container {
+    width: 90%;
+    background-color: var(--Very-pale-blue);   
+    border-radius: 20px;
+    box-shadow: 0px 20px 36px -30px var(--Bright-blue);
+}
+#container img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+#contenido__informacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contenido__title{
+    padding:15px;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+#contenido__desciption {
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color:var(--Desaturated-blue);
+    margin-bottom: 1.3rem;
+    padding:0 2rem;
+}
+
+#contenido__plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--Fondo-plan);
+    width: 85%;
+    border-radius: 15px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+#contenido__plan img {
+    width: 50px;
+}
+#contenido__plan-price-title {
+    gap:0.1rem;
+    margin-left: -20px;
+}
+#contenido__plan-title {
+    font-weight: 900;
+    font-size: 1em;
+}
+#contenido__plan-price {
+    color:var(--Desaturated-blue);
+    font-size: 0.8em;
+}
+#contenido__plan-change {
+    font-weight: 900;
+    font-size: 0.8em;
+}
+#contenido__btn-acept {
+    width: 85%;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--Bright-blue);
+    text-align: center;
+    padding:15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 43px -17px var(--Bright-blue);
+}
+
+#contenido__btn-cancel {
+    margin:25px 0;
+    text-decoration: none;
+    font-weight: 700;
+    color:var(--Desaturated-blue);
+}
